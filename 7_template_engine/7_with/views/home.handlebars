@@ -1,0 +1,16 @@
+<h1> Home</h1>
+
+<p>O nome do usuário é {{user.name}} {{user.surname}}</p>
+
+{{#if aprovado}}
+    <p>Parabéns!</p>
+{{else}}
+    <p>Erro no Cadastro.</p>
+{{/if}}
+
+{{#if auth}}
+    <p>Acesso Permitido!</p>
+    <a href="/dashboard"> dashboard</a>
+    <br><br>
+    <a href="/post"> Blog</a>
+{{/if}}

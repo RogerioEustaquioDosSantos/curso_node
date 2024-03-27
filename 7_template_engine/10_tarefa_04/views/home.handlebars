@@ -1,0 +1,10 @@
+<h1> Home</h1>
+<div id="linhaskin">
+{{#each skins}}
+<div id="skin">
+    <h2>{{this.title}}</h2>
+    <h3>Foça: {{this.category}}</h3>
+    <img src="/img/{{this.category}}.png" alt="{{this.category}}" width="200" height="200"> 
+</div>
+{{/each}}
+</div>
